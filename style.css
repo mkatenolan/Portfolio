@@ -6,7 +6,8 @@ html {
 
 .nav-header{
   z-index:1;
-  background-color:blue;
+  background-color:#F5F5F5;
+  border-bottom: solid grey 1px;
   height:80px;
   width: 100%;
   position:fixed;
@@ -19,6 +20,7 @@ html {
 }
 
 .menu {
+  color:#E5396F;
   display: flex;
   justify-content:center;;
   list-style: none;
@@ -58,10 +60,23 @@ body{
 
 /** Home section **/
 
-/* .Home-article {
-
+.title-container{
+  padding-left: 3rem;
+  display: flex;
   flex-wrap: wrap;
-} */
+  width: 30%;
+  align-content:center;
+}
+span{
+padding: 1rem;
+font-family: 'Barriecito', cursive;
+font-size: 6rem;
+}
+
+.Home {
+  background-image:url(images/brick-wall-background.jpg);
+  background-size: cover;
+}
 
 .home-container{
   display: flex;
@@ -72,6 +87,7 @@ body{
 .Home-image{
   -webkit-filter: grayscale(0.8);
   filter:grayscale(0.8);
+  border:solid #39185B 2px;
   max-width: 30%;
   height: 500px;
 }
