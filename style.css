@@ -5,6 +5,7 @@ html {
 /** Navigation section **/
 
 .nav-header{
+  z-index:1;
   background-color:blue;
   height:80px;
   width: 100%;
@@ -39,12 +40,12 @@ a {
 
 a:hover {
   animation-name:underline;
-  animation-duration:2s;
+  animation-duration:0.8s;
 }
 
-@keyframes underline {
-  from{text-decoration:none;}
-  to{text-decoration:underline;}
+@keyframes underline{
+  from {text-decoration:none;}
+  to {text-decoration:underline;}
 }
 section{
   height:100vh;
@@ -56,6 +57,29 @@ body{
 }
 
 /** Home section **/
+
+/* .Home-article {
+
+  flex-wrap: wrap;
+} */
+
+.home-container{
+  display: flex;
+  justify-content:space-around;
+  height:25%;
+}
+
+.Home-image{
+  -webkit-filter: grayscale(0.8);
+  filter:grayscale(0.8);
+  max-width: 30%;
+  height: 500px;
+}
+
+.Home-text-div{
+  padding-top:2rem;
+  max-width: 28%;
+}
 
 /** About section **/
 
