@@ -1,10 +1,29 @@
+/** Navigation section **/
+
 .nav-header{
   background-color:blue;
   height:80px;
   width: 100%;
-  margin:0;
-  padding:0;
   position:fixed;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav-bar{
+  padding-right: 3rem;
+}
+
+.menu {
+  display: flex;
+  justify-content:center;;
+  list-style: none;
+  align-items:flex-start;
+}
+
+
+
+li {
+  padding: 1.5rem;
 }
 
 section{
@@ -12,7 +31,16 @@ section{
   padding-top: 85px;
 }
 
-.body{
-  padding-top:0;
-  margin-top:0;
+/** Home section **/
+
+/** About section **/
+
+/** Projects section **/
+
+/** Contact section **/
+
+/** Footer **/
+
+.footer{
+  height: 60px;
 }
