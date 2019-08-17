@@ -1,0 +1,110 @@
+
+html {
+  scroll-behavior: smooth;
+}
+/** Navigation section **/
+
+.nav-header{
+  z-index:1;
+  background-color:#F5F5F5;
+  border-bottom: solid grey 1px;
+  height:80px;
+  width: 100%;
+  position:fixed;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav-bar{
+  padding-right: 3rem;
+}
+
+.menu {
+  color:#E5396F;
+  display: flex;
+  justify-content:center;;
+  list-style: none;
+  align-items:flex-start;
+}
+
+
+
+li {
+  padding: 1.5rem;
+}
+
+a {
+    cursor:pointer;
+    color: inherit;
+    text-decoration: none;
+
+}
+
+a:hover {
+  animation-name:underline;
+  animation-duration:0.8s;
+}
+
+@keyframes underline{
+  from {text-decoration:none;}
+  to {text-decoration:underline;}
+}
+section{
+  height:100vh;
+  padding-top: 85px;
+}
+
+body{
+  font-family: 'Overpass Mono', monospace;
+}
+
+/** Home section **/
+
+.title-container{
+  padding-left: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
+  align-content:center;
+}
+span{
+padding: 1rem;
+font-family: 'Barriecito', cursive;
+font-size: 6rem;
+}
+
+.Home {
+  background-image:url(images/brick-wall-background.jpg);
+  background-size: cover;
+}
+
+.home-container{
+  display: flex;
+  justify-content:space-around;
+  height:25%;
+}
+
+.Home-image{
+  -webkit-filter: grayscale(0.8);
+  filter:grayscale(0.8);
+  border:solid #39185B 2px;
+  max-width: 30%;
+  height: 500px;
+}
+
+.Home-text-div{
+  padding-top:2rem;
+  max-width: 28%;
+}
+
+/** About section **/
+
+/** Projects section **/
+
+/** Contact section **/
+
+/** Footer **/
+
+.footer{
+  height: 60px;
+}
