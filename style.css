@@ -1,0 +1,18 @@
+.nav-header{
+  background-color:blue;
+  height:80px;
+  width: 100%;
+  margin:0;
+  padding:0;
+  position:fixed;
+}
+
+section{
+  height:100vh;
+  padding-top: 85px;
+}
+
+.body{
+  padding-top:0;
+  margin-top:0;
+}
