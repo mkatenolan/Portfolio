@@ -146,6 +146,29 @@ span {
 
 /** About section **/
 
+.About-image{
+  max-width: 35%;
+  padding: 1em;
+}
+
+.About-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.About-paragraph {
+  padding: 1em;
+  max-width: 50%;
+}
+h2 {
+  padding: 0.5em;
+  margin-left: 1.8em;
+  font-size: 2em;
+}
+
 /** Projects section **/
 
 /** Contact section **/
