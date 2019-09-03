@@ -73,21 +73,20 @@ span {
   font-size: 6rem;
 }
 
-
 .Home {
   background-image: url(images/pink-tiles-background.jpg);
   background-size: cover;
 }
 
-.grid-container{
-  display:grid;
-  height:93vh;
+.grid-container {
+  display: grid;
+  height: 93vh;
   grid-template-rows: 0.3fr 0.3fr 0.3fr 1fr 1fr 1fr;
-  grid-template-columns:0.6fr 0.5fr 0.5fr 0.5fr 1fr 1fr 1fr 0.6fr;
+  grid-template-columns: 0.6fr 0.5fr 0.5fr 0.5fr 1fr 1fr 1fr 0.6fr;
 }
 
 .letter-m {
-  grid-column: 2/ span 1;
+  grid-column: 2 / span 1;
   grid-row: 1 / span 1;
 }
 
@@ -103,7 +102,7 @@ span {
 
 .letter-t {
   grid-column: 4 / span 1;
-  grid-row: 2/ span 1;
+  grid-row: 2 / span 1;
 }
 
 .letter-h {
@@ -112,8 +111,8 @@ span {
 }
 
 .letter-last-a {
-  grid-column: 2/ span 1;
-  grid-row: 3/ span 1;
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
 }
 
 /* .letter
@@ -135,18 +134,17 @@ span {
 
 .Home-text-div {
   text-align: left;
-  grid-column: 3/ span 3;
-  grid-row: 3/ span 3;
+  grid-column: 3 / span 3;
+  grid-row: 3 / span 3;
   overflow-y: hidden;
   align-self: start;
   justify-content: start;
   padding-right: 1em;
-
 }
 
 /** About section **/
 
-.About-image{
+.About-image {
   max-width: 35%;
   padding: 1em;
 }
@@ -171,6 +169,30 @@ h2 {
 
 /** Projects section **/
 
+.Projects-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-one-image {
+  max-width: 20%;
+  max-height: 10%;
+}
+.project-two-image {
+  max-width: 20%;
+}
+.project-three-image {
+  max-width: 20%;
+}
+.project-four-image {
+  max-width: 20%;
+}
+
+.Projects p {
+  max-width: 20%;
+}
 /** Contact section **/
 
 /** Footer **/
