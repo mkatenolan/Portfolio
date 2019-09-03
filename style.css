@@ -115,12 +115,6 @@ span {
   grid-row: 3 / span 1;
 }
 
-/* .letter
-.home-container {
-  display: flex;
-  justify-content: space-around;
-  height: 25%;
-} */
 
 .Home-image {
   -webkit-filter: grayscale(0.8);
@@ -169,30 +163,57 @@ h2 {
 
 /** Projects section **/
 
+.Projects{
+  padding-bottom: 3rem;
+}
+
 .Projects-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1rem;
+}
+.Project-one{
+  /* background-color: #f5f5f5; */
+  grid-column: 2 /span 1;
+  align-self: stretch;
+}
+
+.Project-two{
+  grid-column: 3/span 1;
+  align-self: stretch;
+}
+
+.Project-three{
+  grid-column: 2 /span 1;
+  grid-row: 2 /span 1;
+}
+
+.Project-four {
+  grid-column: 3/span 1;
+  grid-row: 2/ span 1;
 }
 
 .project-one-image {
-  max-width: 20%;
-  max-height: 10%;
+  max-width: 70%;
 }
 .project-two-image {
-  max-width: 20%;
+  max-width: 70%;
 }
 .project-three-image {
-  max-width: 20%;
+  max-width: 70%;
 }
 .project-four-image {
-  max-width: 20%;
+  max-width: 70%;
 }
 
-.Projects p {
-  max-width: 20%;
+.Projects p{
+  max-width: 70%;
+  text-align: left;
 }
+
+
 /** Contact section **/
 
 /** Footer **/
