@@ -9,8 +9,10 @@
       href="https://fonts.googleapis.com/css?family=Overpass+Mono:300&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css?family=Barriecito&display=swap" rel="stylesheet">
-
+    <link
+      href="https://fonts.googleapis.com/css?family=Barriecito&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Martha Nolan:Portfolio</title>
   </head>
@@ -25,38 +27,45 @@
       </nav>
     </header>
     <section class="Home">
-      <article class="Home-article">
-        <h1>
-          <div class="title-container">
-          <span>M</span> <span>A</span> <span>R</span> <span>T</span>
-          <span>H</span> <span>A</span>
+      <div class="grid-container">
+        <!-- <article class="Home-article"> -->
+        <!-- <h1> -->
+
+        <span class="letter-m">M</span> <span class="letter-a">A</span>
+        <span class="letter-r">R</span> <span class="letter-t">T</span>
+        <span class="letter-h">H</span> <span class="letter-last-a">A</span>
+
+        <!-- </h1> -->
+        <!-- <div class="home-container"> -->
+
+        <div class="Home-text-div">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
         </div>
-        </h1>
-      <div class="home-container">
-
-      <div class="Home-text-div">  <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
-</div>
-  <img class="Home-image" src="images/home-image.jpg" alt="Cute pic of me!" />
-</div>
-      </article >
+        <img
+          class="Home-image"
+          src="images/home-image.jpg"
+          alt="Cute pic of me!"
+        />
+      </div>
+      <!-- </div> -->
+      <!-- </article > -->
     </section>
     <section class="About" id="About">
       <article>
         <h2>Who is she?</h2>
-        <img class="About-image" src="#" alt="Another cute pic of me!" />
-        <p>
+        <div class="About-container">
+        <img class="About-image" src="images/fac17-pic.jpeg" alt="Another cute pic of me!" />
+
+        <p class="About-paragraph">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -65,9 +74,36 @@
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
+
+
+      </div>
       </article>
     </section>
-    <section class="Projects" id="Projects">  <h2>Here's a few of my favourite projects</h2></section>
+    <section class="Projects" id="Projects">
+      <h2>Here's a few of my favourite projects</h2>
+      <div class="Projects-container">
+      <div class="Project-one">
+        <img class="project-one-image" src="images/fun-facts.png" alt="Fun facts!" />
+      <p> A forum + game to share fun & surprising facts about yourself and guess those of others. Built with Express.js, Handlebars & PostgreSQL. </p>
+      <p> Play now </>
+      </div>
+      <div class="Project-two">
+        <img class="project-two-image" src="images/partyps.png" alt="Partyps!" />
+        <p> A site for party suggestions to learn API calls on the front-end. Built using Vanilla Javascript & Ajax requests. </p>
+        <p> Have a gander </p>
+      </div>
+    <div class="Project-three">
+      <img class="project-three-image" src="images/taking-stock.png" alt="Taking Stock!" />
+      <p> A site for checking the price of (popular??) commodities. Built witht he aim of learning API calls from the backend, using Node.js & Vanilla Javascript. </p>
+      <p> check it out </p>
+    </div>
+    <div class="Project-four">
+      <img class="project-four-image" src="images/todo-list.png" alt="Todo list!" />
+      <p> An app for keeping & managing your to-do list in an easy and accessible way. Built using HTML, CSS & Vanilla Javascript. </p>
+      <p> Take a look <p>
+      </div>
+    </div>
+    </section>
 
     <section class="Contact" id="Contact">
       <h2>I'd love to hear from you!</h2>
