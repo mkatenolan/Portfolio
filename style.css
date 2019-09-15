@@ -34,21 +34,16 @@ a {
   cursor: pointer;
   color: inherit;
   text-decoration: none;
+  transition-delay: 0.5s
+  -webkit-transition: text-decoration 1s;
+  transition: text-decoration 1s;
 }
 
-a:hover {
-  animation-name: underline;
-  animation-duration: 0.8s;
+a:hover{
+  text-decoration: underline;
 }
 
-@keyframes underline {
-  from {
-    text-decoration: none;
-  }
-  to {
-    text-decoration: underline;
-  }
-}
+
 section {
   height: 87vh;
   padding-top: 13vh;
@@ -128,12 +123,16 @@ span {
 
 .Home-text-div {
   text-align: left;
+  padding-right:2rem;
   grid-column: 3 / span 3;
   grid-row: 3 / span 3;
   overflow-y: hidden;
   align-self: start;
   justify-content: start;
   padding-right: 1em;
+}
+.Home-text-div p {
+  padding-right: 3.5rem;
 }
 
 /** About section **/
@@ -156,15 +155,26 @@ span {
   max-width: 50%;
 }
 h2 {
-  padding: 0.5em;
+  padding-right: 1.8em;
+  text-align: center;
   margin-left: 1.8em;
   font-size: 2em;
+  padding-bottom: 2em;
 }
 
 /** Projects section **/
 
 .Projects{
   padding-bottom: 3rem;
+}
+
+.projects-text-div{
+  padding:0;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction:column;
+text-align: center;
 }
 
 .Projects-container {
@@ -176,23 +186,55 @@ h2 {
 }
 .Project-one{
   /* background-color: #f5f5f5; */
+  display: flex;
+  align-items: center;
+  flex-direction:column;
   grid-column: 2 /span 1;
   align-self: stretch;
 }
 
 .Project-two{
+
+  display: flex;
+  align-items: center;
+  flex-direction:column;
   grid-column: 3/span 1;
   align-self: stretch;
 }
 
 .Project-three{
+  display: flex;
+  align-items: center;
+  flex-direction:column;
   grid-column: 2 /span 1;
   grid-row: 2 /span 1;
 }
 
 .Project-four {
+  display: flex;
+  align-items: center;
+  flex-direction:column;
   grid-column: 3/span 1;
   grid-row: 2/ span 1;
+}
+
+.Project-five {
+  display: flex;
+  align-items: center;
+  flex-direction:column;
+  background-color: blue;
+  width: 70%;
+  grid-column: 2/ span 1;
+  grid-row: 3/span 1;
+}
+
+.Project-six{
+  display: flex;
+  align-items: center;
+  flex-direction:column;
+  background-color: blue;
+  width: 70%;
+  grid-column: 3/span 1;
 }
 
 .project-one-image {
