@@ -169,11 +169,17 @@ h2 {
 .button{
   cursor:pointer;
   text-align: center;
+  font-size: 1em;
   width: 5em;
   background-color: #F7F4F3;
   border-radius: 5%;
+  transition: background-color;
 }
 
+.button:hover{
+  transform: translateY(-3px);
+  /* background-color:#F9ADA0; */
+}
 h3{
   font-family: "Barriecito", cursive;
   font-size: 2.5em;
@@ -307,6 +313,10 @@ flex-direction:column;
 
 
 /** Contact section **/
+
+.Contact{
+  height: 100vh;
+}
 
 /** Footer **/
 
