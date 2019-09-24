@@ -47,10 +47,10 @@ a:hover{
 }
 
 
-section {
+/* section {
   height: 87vh;
   padding-top: 13vh;
-}
+} */
 
 body {
   font-family: "Overpass Mono", monospace;
@@ -73,6 +73,8 @@ body {
 }
 
 .Home {
+  height: 87vh;
+  padding-top: 13vh;
   background-image: url(images/pink-tiles-background.jpg);
   background-size: cover;
 }
@@ -139,6 +141,10 @@ body {
 
 /** About section **/
 
+.About {
+height: 87vh;
+padding-top: 13vh;
+}
 .About-image {
   max-width: 35%;
   padding: 1em;
@@ -188,6 +194,7 @@ h3{
 }
 
 .Projects{
+  padding-top: 13vh;
   padding-bottom: 3rem;
 }
 
@@ -315,11 +322,13 @@ flex-direction:column;
 /** Contact section **/
 
 .Contact{
-  height: 100vh;
+  height: 87vh;
+  padding-top: 13vh;
 }
 
 /** Footer **/
 
 .footer {
+  text-align: center; 
   height: 60px;
 }
