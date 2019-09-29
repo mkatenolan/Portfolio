@@ -6,7 +6,7 @@ html {
 
 .nav-header {
   z-index: 1;
-  background-color: #F7F4F3;
+  background-color: white;
   border-bottom: solid grey 1px;
   height: 10vh;
   width: 100%;
@@ -168,6 +168,25 @@ h2 {
   text-align: center;
   margin-left: 1.8em;
   font-size: 4em;
+  margin-top: 0;
+  margin-bottom:0.5em;
+}
+
+/** Tech stack container **/
+
+.tech-stack {
+  width: 5%;
+}
+.express-img
+{
+  width: 8%;
+}
+
+.tech-stack-container{
+  margin-top: 1.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 /** Projects section **/
@@ -322,13 +341,13 @@ flex-direction:column;
 /** Contact section **/
 
 .Contact{
-  height: 87vh;
+  height: 82vh;
   padding-top: 13vh;
 }
 
 /** Footer **/
 
 .footer {
-  text-align: center; 
+  text-align: center;
   height: 60px;
 }
