@@ -3,6 +3,10 @@ html {
 }
 /** Navigation section **/
 
+body {
+  font-family: "Overpass Mono", monospace;
+  color:#241623;
+}
 
 .nav-header {
   z-index: 1;
@@ -47,6 +51,14 @@ a{
   cursor:pointer;
 }
 
+.Home-button:hover{
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.4s ease 0s;
+  text-shadow: 1px 1px black;
+}
+
 li {
   padding: 1.5rem;
 }
@@ -74,10 +86,7 @@ li {
   padding-top: 13vh;
 } */
 
-body {
-  font-family: "Overpass Mono", monospace;
-  color:#241623;
-}
+
 
 /** Home section **/
 
