@@ -4,14 +4,14 @@ html {
 /** Navigation section **/
 
 body {
-  font-family: "Overpass Mono", monospace;
+  font-family: 'Montserrat', sans-serif;
   color:#241623;
 }
 
 .nav-header {
   z-index: 1;
   background-color: white;
-  border-bottom: solid #2F00FB 2px;
+  border-bottom: solid #EEEEEE 2px;
   height: 10vh;
   width: 100%;
   position: fixed;
@@ -20,32 +20,32 @@ body {
   align-items: center;
 }
 .nav-bar {
-  padding-right: 1rem;
-  padding-right: 1rem;
+
 padding-bottom: 0.5em;
 padding-top: 0.5em;
     flex-direction: row;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     width: 100%;
     justify-content: flex-end;
 }
 
 .menu {
-  color: #241623;
   font-weight: bold;
-  font-size: 1.2em;
+  text-transform: uppercase;
+  font-size: 0.6em;
   display: flex;
   justify-content: center;
   list-style: none;
   align-items: flex-start;
-  padding-bottom:0;
+  /* padding-bottom:0.6em; */
   margin-bottom:0;
 }
 
 a{
   text-decoration: none;
   color: black;
+  /* padding:0.6em; */
 }
 
 .home-button-container{
@@ -53,15 +53,15 @@ a{
   justify-content: center;
   flex-direction: column;
     margin-right: auto;
-    padding-left: 0.5em;
+    padding-left: 0.7em;
 }
 .Home-button{
+  font-weight: bold;
   padding: 0;
   margin-left: 0;
   margin-right: auto;
   border:none;
-  font-family:  "Barriecito", cursive;;
-  font-size: 2.3em;
+  font-size: 2em;
   cursor:pointer;
 }
 
@@ -74,7 +74,9 @@ a{
 }
 
 .home-button-text{
-  font-size: 0.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.6em;
 }
 
 
@@ -92,16 +94,18 @@ a{
 }
 
 .menu a:hover{
-  color:  #2F00FB;
-  border: 2px solid #2F00FB;
-  box-shadow: 3px 3px #2F00FB;
+  color:  #7700A3;
+  border: 2px solid #7700A3;
+  box-shadow: 3px 3px #7700A3;
   /* text-shadow: 1px 1px black;
   text-decoration: underline; */
-  transition: all 0.4s ease 0s;
+  /* transition: all 0.4s ease 0s; */
 }
 
 
-
+li{
+padding: 0.8em;
+}
 
 /* section {
   height: 87vh;
@@ -121,7 +125,7 @@ a{
 } */
 
 .Home span {
-  font-family: "Barriecito", cursive;
+  font-family: 'Caveat', cursive;
   font-size: 6rem;
 }
 
@@ -185,8 +189,8 @@ a{
 
 .Home-text-div {
   color: #636363;
-  width: 40%;
-  text-shadow: 1px 1px black;
+  text-shadow: 1px 1px #636363;
+  width: 50%;
   text-align: center;
 
 }
@@ -201,12 +205,16 @@ a{
 
 .home-icons{
   margin:0.4em;
-  max-width: 18%;
+  max-width: 14%;
 
 }
 
 .home-icons:hover{
  transform:translateY(-2px);
+ -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,1);
+ -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.1);
+ box-shadow: 5px 40px -10px rgba(0,0,0,1);
+ transition: all 0.4s ease 0s;
 
 }
 
@@ -214,6 +222,7 @@ a{
 /** About section **/
 
 .About {
+  background-color: #EEEEEE;
 height: 87vh;
 padding-top: 13vh;
 }
@@ -239,7 +248,7 @@ box-shadow: 1px 1px 1px 1px #3f3f3f;
 h2 {
   padding-top: 0.8em;
   padding-right: 1.8em;
-  text-shadow: 2px 2px black;
+  text-shadow: 1px 1px black;
   text-align: center;
   margin-left: 1.8em;
   font-size: 3em;
@@ -403,21 +412,26 @@ background-color:#FFAC81;
 
 .Contact{
   height: 75vh;
-  /* padding-top: 15vh; */
+
 }
 
-.triangle-one{
-  height: 37.5vh;
+/* .triangle-one{
+  /* height: 37.5vh;
   border-left: 1000px solid rgba(0, 0, 0, 0);
     border-right: 1000px solid rgba(0, 0, 0, 0);
     border-top: 550px solid #EEEEEE;
     left: 50%;
     margin-left: -1000px;
     position: absolute;
-    width: 0;
-}
+    width: 0; */
+    /* position:relative;
+     width: 0;
+     height: 0;
+     border-top: 1000px solid red;
+     border-right: 1500px solid transparent;
+} */
 
-.triangle-two{
+/* .triangle-two{
   border-left: 1000px solid rgba(0, 0, 0, 0);
     border-right: 1000px solid rgba(0, 0, 0, 0);
     border-bottom: 600px solid #EEEEEE;
@@ -427,7 +441,7 @@ background-color:#FFAC81;
     position: absolute;
     width: 0;
   height: 37.5vh;
-}
+} */
 /** Footer **/
 
 .footer {
