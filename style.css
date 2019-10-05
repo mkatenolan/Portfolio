@@ -317,29 +317,8 @@ h3{
   padding-bottom: 3rem;
 }
 
-.projects-text-div{
-padding-right: 1.2em;
-padding-left: 1.2em;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction:column;
-
-}
-
-.Projects-container {
-  display: grid;
-  grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-column-gap: 1.5rem;
-  grid-row-gap: 1.5rem;
-}
-
-.Projects-container span{
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-  padding-right: 2em;
-  padding-left: 2em;
+.Projects img {
+  max-width: 100%;
 
 }
 
@@ -349,23 +328,33 @@ flex-direction:column;
 .Project-four,
 .Project-five,
 .Project-six{
-  box-shadow: 1px 1px 1px 1px #3f3f3f;
-    padding-top: 2em;
-    border-radius: 5%;
-    height: 22em;
-   background-color: #0E96A3;
-    display: flex;
-    align-items: center;
-    flex-direction:column;
-    align-self: stretch;
+  margin:0.5em;
+  max-width: 40%; 
 }
 
-.trivia-api-link{
+.Projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/*
+.Projects-container span{
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  padding-right: 2em;
+  padding-left: 2em;
+
+} */
+
+
+/* .trivia-api-link{
   text-decoration: underline;
 }
-.Project-one{
- background-color: #0E96A3;
-grid-column: 2 /span 1;
+/* .Project-one{
+ background-color: #0E96A3; */
+/* grid-column: 2 /span 1;
 
 }
 
@@ -373,14 +362,14 @@ grid-column: 2 /span 1;
 background-color: #E9BDB7;
 grid-column: 3/span 1;
 
-}
+} */
 
-.Project-three{
+/* .Project-three{
 
  background-color: #6C698D;
   grid-column: 2 /span 1;
-  grid-row: 2 /span 1;
-}
+  grid-row: 2 /span 1; */ */
+/* }
 
 .Project-four {
  background-color: #CE6C47;
@@ -405,7 +394,7 @@ background-color:#FFAC81;
 .Projects p{
   max-width: 70%;
   text-align: left;
-}
+} */
 
 
 /** Contact section **/
