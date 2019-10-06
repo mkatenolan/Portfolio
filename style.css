@@ -20,7 +20,7 @@ body {
   align-items: center;
 }
 .nav-bar {
-
+/* background-color: #EEEEEE; */
 padding-bottom: 0.5em;
 padding-top: 0.5em;
     flex-direction: row;
@@ -246,12 +246,13 @@ box-shadow: 1px 1px 1px 1px #3f3f3f;
   max-width: 50%;
 }
 h2 {
+  font-family: 'Caveat', cursive;
   padding-top: 0.8em;
   padding-right: 1.8em;
   text-shadow: 1px 1px black;
   text-align: center;
   margin-left: 1.8em;
-  font-size: 3em;
+  font-size: 4em;
   margin-top: 0;
   margin-bottom:0.8em;
 }
@@ -355,6 +356,7 @@ h3{
 }
 
 .overlay-text{
+  text-shadow: 1px 1px #EEEEEE;
   color: white;
   font-size: 20px;
   position: absolute;
