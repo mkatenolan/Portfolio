@@ -319,17 +319,19 @@ h3{
 
 .Projects img {
   max-width: 100%;
+  height: auto;
 
 }
 
-.Project-one,
-.Project-two,
-.Project-three,
-.Project-four,
-.Project-five,
-.Project-six{
+.Project{
   margin:0.5em;
-  max-width: 40%; 
+  max-width: 40%;
+  position:relative;
+}
+
+.Project:hover .overlay{
+  opacity: 1;
+  cursor:pointer;
 }
 
 .Projects-container {
@@ -338,6 +340,32 @@ h3{
   align-items: center;
   flex-wrap: wrap;
 }
+
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #7700A3;
+}
+
+.overlay-text{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 
 /*
 .Projects-container span{
