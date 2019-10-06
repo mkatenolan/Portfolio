@@ -6,21 +6,29 @@
     <link rel="shortcut icon" href="images/favicon.ico"/>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="normalize.css" />
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css?family=Overpass+Mono:300&display=swap"
       rel="stylesheet"
     />
     <link
       href="https://fonts.googleapis.com/css?family=Barriecito&display=swap"
       rel="stylesheet"
-    />
+    /> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat:700|Permanent+Marker|Satisfy&display=swap" rel="stylesheet">
+
+
 
     <title>Martha Nolan:Portfolio</title>
   </head>
   <body>
     <header class="nav-header">
       <nav class="nav-bar">
-        <button class="Home-button"><a href="#Home">MKN</a></button>
+        <div class="home-button-container">
+         <button class="Home-button"><a href="#Home">Martha.</a></button>
+         <span class="home-button-text">Full-stack web developer</span>
+       </div>
         <ul class="menu">
           <li><a href="#About">About</a></li>
           <li><a href="#Projects">Projects</a></li>
@@ -29,27 +37,30 @@
       </nav>
     </header>
     <section class="Home" id="Home">
-      <div class="grid-container">
+      <!-- <div class="grid-container">
         <span class="letter-m">M</span> <span class="letter-a">A</span>
         <span class="letter-r">R</span> <span class="letter-t">T</span>
-        <span class="letter-h">H</span> <span class="letter-last-a">A</span>
-
-        <div class="Home-text-div">
-          <p>
-            Hi, I'm Martha! I'm a junior full-stack web developer based in East
-            London. I like solving problems, building inclusive software,
-            playing music and reading books. I'm a part of the Founders and
-            Coders community, regulary attend meet-ups and love collaborating
-            with others. Here you can find a little more about me, see a few of
-            my favourtie projects and get in contact.
-          </p>
-        </div>
+        <span class="letter-h">H</span> <span class="letter-last-a">A</span> -->
         <img
           class="Home-image"
           src="images/profile-pic.png"
           alt="Cute pic of me!"
         />
-      </div>
+        <span> Hello, </span>
+        <div class="Home-text-div">
+          <p>
+            I'm Martha, a junior full-stack web developer based in East
+            London. I like solving problems, building inclusive software,
+             playing music and reading books. <!-- I'm a part of the Founders and
+            Coders community, regulary attend meet-ups and love collaborating
+            with others. -->  Here you can find a little more about me, see a few of
+            my favourtie projects and get in contact.
+          </p>
+        </div>
+        <div class="home-icons-container">
+      <img class="home-icons" src="images/contact/github-sign.svg" alt="Author: Dave Gandy, Pexels"/>
+      <img class="home-icons" src="images/contact/linkedin.svg" alt="Author: Dave Gandy, Pexels"/>
+    </div>
       <!-- </div> -->
       <!-- </article > -->
     </section>
@@ -94,167 +105,83 @@
     <section class="Projects" id="Projects">
       <h2>My favourite projects</h2>
       <div class="Projects-container">
-        <div class="Project-one">
-          <h3>Quiz Game</h3>
-          <div class="projects-text-div">
-            <span>
-              A quiz game made with React.js & the
-              <a
-                class="trivia-api-link"
-                target="_blank"
-                href="https://opentdb.com/api_config.php"
-                >Open Trivia Database API.</a
-              >
-              Users can choose a category and play a game of 15 questions. My
-              first experience getting to grips with the wondrous possibilities
-              of React!
-            </span>
-            <div class="button-container">
-              <span class="button"
-                ><a target="_blank" href="https://sad-cray-20c453.netlify.com"
-                  >Live</a
-                ></span
-              >
-              <span class="button"
-                ><a
+        <div class="Project">
+
+
+                <img src="images/projects/kool-quiz.png">
+                <a
                   target="_blank"
-                  href="https://github.com/mkatenolan/FAC-week13-KoolKwiz"
-                  >Repo</a
-                ></span
-              >
-            </div>
-          </div>
+                  href="https://github.com/mkatenolan/FAC-week13-KoolKwiz"><div class="overlay">
+                    <div class="overlay-text">
+                      A quiz for Kool Kidz built with React & Open Trivia Database API.
+                    </div>
+                  </div></a>
+
         </div>
-        <div class="Project-two">
-          <h3>NomNom</h3>
-          <div class="projects-text-div">
-            <span>
-              A forum + game to share fun & surprising facts about yourself and
-              guess those of others. Built with Express.js, Handlebars &
-              PostgreSQL.
-            </span>
-            <div class="button-container">
-              <span class="button"
-                ><a target="_blank" href="https://nom-nom-fac.herokuapp.com/"
-                  >Live</a
-                ></span
-              >
-              <span class="button"
-                ><a
-                  target="_blank"
-                  href="https://github.com/mkatenolan/FAC-week10-12-student-project"
-                  >Repo</a
-                ></span
-              >
-            </div>
-          </div>
+        <div class="Project">
+      <img src="images/projects/nom-nom.png">
+      <a target="_blank"
+                href="https://github.com/mkatenolan/FAC-week10-12-student-project"><div class="overlay">
+                    <div class="overlay-text">
+                    A meal-planning app built with Vanilla Javascript, Express.js & Handlebars.
+                    </div>
+                  </div></a>
+
         </div>
-        <div class="Project-three">
-          <h3>Fun FACts</h3>
-          <div class="projects-text-div">
-            <span>
-              A forum + game to share fun & surprising facts about yourself and
-              guess those of others. Built with Express.js, Handlebars &
-              PostgreSQL.
-            </span>
-            <div class="button-container">
-              <span class="button"
-                ><a target="_blank" href="https://fun-fac-ts.herokuapp.com/"
-                  >Live</a
-                ></span
-              >
-              <span class="button"
-                ><a
+        <div class="Project">
+      <img src="images/projects/fun-facts.png">  <a
                   target="_blank"
                   href="https://github.com/mkatenolan/Fac-week8-Fun-FACts"
-                  >Repo</a
-                ></span
-              >
-            </div>
-          </div>
-        </div>
-        <div class="Project-four">
-          <h3>Partyps!</h3>
+                  ><div class="overlay">
+                      <div class="overlay-text"> A true or false game built with Vanilla Javascript, Node.js & Handlebars.
+                      </div>
+                    </div></a>
 
-          <div class="projects-text-div">
-            <span>
-              A site for party suggestions to learn API calls on the front-end.
-              Built using Vanilla Javascript & Ajax requests.
-            </span>
-            <div class="button-container">
-              <span class="button"
-                ><a target="_blank" href="https://fac-17.github.io/W3-Partyps/"
-                  >Live</a
-                ></span
-              >
-              <span class="button"
-                ><a
+        </div>
+        <div class="Project">
+        <img src="images/projects/partyps.png">
+
+        <a
                   target="_blank"
                   href="https://github.com/mkatenolan/FAC-week-3-Partyps"
-                  >Repo</a
-                ></span
-              >
-            </div>
-          </div>
-        </div>
-        <div class="Project-five">
-          <h3>My Todos</h3>
+                  ><div class="overlay">
+                      <div class="overlay-text"> An app to curate the perfect party made to practice API calls from the frontend - we used Recipe Puppy & Deezer API.
+                      </div>
+                    </div></a>
 
-          <div class="projects-text-div">
-            <span>
-              An app for keeping & managing your to-do list in an easy and
-              accessible way. Built using HTML, CSS & Vanilla Javascript.
-            </span>
-            <div class="button-container">
-              <span class="button"
-                ><a
-                  target="_blank"
-                  href="https://fac-17.github.io/week-2-EFGH-to-do-app/"
-                  >Live</a
-                ></span
-              >
-              <span class="button"
-                ><a
-                  target="_blank"
-                  href="https://github.com/mkatenolan/FAC-week-2-To-do-List"
-                  >Repo</a
-                ></span
-              >
-            </div>
-          </div>
         </div>
-        <div class="Project-six">
-          <h3>Taking Stock</h3>
-          <div class="projects-text-div">
-            <span>
-              A site for checking the price of (popular??) commodities. Built
-              witht he aim of learning API calls from the backend, using Node.js
-              & Vanilla Javascript.
-            </span>
-            <div class="button-container">
-              <span class="button"
-                ><a target="_blank" href="https://chin-week5-apis.herokuapp.com"
-                  >Live</a
-                ></span
-              >
-              <span class="button"
-                ><a
+        <div class="Project">
+          <img src="images/projects/taking-stock.png">
+          <a
                   target="_blank"
                   href="https://github.com/mkatenolan/FAC-week5-Taking-Stock"
-                  >Repo</a
-                ></span
-              >
-            </div>
-          </div>
+                  ><div class="overlay">
+                      <div class="overlay-text"> An app for checking the price of (popular??) commodities! Built to practce API calls from the backend. 
+                      </div>
+                    </div></a>
+
+
         </div>
+        <div class="Project">
+          <a
+                  target="_blank"
+                  href="#"
+                  ></a>
+
       </div>
+    </div>
     </section>
 
     <section class="Contact" id="Contact">
-      <h2>I'd love to hear from you...</h2>
-      <a href="#">Github</a> <a href="#">Linkedin</a>
-      <p>Email: mkatenolan@gmail.com</p>
-      <p><a href="#">CV</a></p>
+
+<!-- <div class="triangle-one"> -->
+  <h2>I'd love to hear from you...</h2>
+<!-- </div> -->
+<!-- <div class="triangle-two">
+</div> -->
+          <!-- <a href="www.github.com/mkatenolan"><img src="images/contact/github-sign.svg"></a> <a href="#"><img src="images/contact/linkedin.svg"></a>
+    <img src="images/contact/email.svg">
+      <a href="#"><img src="images/contact/phone.svg"></a> -->
     </section>
 
     <footer class="footer">
