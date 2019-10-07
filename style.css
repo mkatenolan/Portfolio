@@ -61,14 +61,11 @@ a{
   margin-left: 0;
   margin-right: auto;
   border:none;
-  font-size: 2em;
+  font-size: 1.6em;
   cursor:pointer;
 }
 
 .Home-button:hover{
-  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-  box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
   transition: all 0.4s ease 0s;
   text-shadow: 1px 1px black;
 }
@@ -314,6 +311,7 @@ h3{
 }
 
 .Projects{
+  text-align: center;
   padding-top: 13vh;
   padding-bottom: 3rem;
 }
@@ -330,7 +328,12 @@ h3{
   position:relative;
 }
 
-.Project:hover .overlay{
+.Project:hover .overlay-one{
+  opacity: 1;
+  cursor:pointer;
+}
+
+.Project:hover .overlay-two{
   opacity: 1;
   cursor:pointer;
 }
@@ -342,7 +345,7 @@ h3{
   flex-wrap: wrap;
 }
 
-.overlay{
+.overlay-one{
   position: absolute;
   top: 0;
   bottom: 0;
@@ -354,6 +357,20 @@ h3{
   transition: .5s ease;
   background-color: #7700A3;
 }
+.overlay-two{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #48A9A6;
+}
+
+
 
 .overlay-text{
   text-shadow: 1px 1px #EEEEEE;
@@ -369,102 +386,21 @@ h3{
 }
 
 
-/*
-.Projects-container span{
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-  padding-right: 2em;
-  padding-left: 2em;
 
-} */
+/** Tech-stack section **/
 
-
-/* .trivia-api-link{
-  text-decoration: underline;
-}
-/* .Project-one{
- background-color: #0E96A3; */
-/* grid-column: 2 /span 1;
+.Tech-stack{
+  height: 80vh;
+  background-color: #07BEB8;
 
 }
 
-.Project-two{
-background-color: #E9BDB7;
-grid-column: 3/span 1;
 
-} */
-
-/* .Project-three{
-
- background-color: #6C698D;
-  grid-column: 2 /span 1;
-  grid-row: 2 /span 1; */ */
-/* }
-
-.Project-four {
- background-color: #CE6C47;
-  grid-column: 3/span 1;
-  grid-row: 2/ span 1;
-}
-
-.Project-five {
-background-color:#FFAC81;
-  grid-column: 2/ span 1;
-  grid-row: 3/span 1;
-}
-
-.Project-six{
-
- background-color:#EF798A;
-  grid-column: 3/span 1;
-}
-
-
-
-.Projects p{
-  max-width: 70%;
-  text-align: left;
-} */
-
-
-/** Contact section **/
-
-.Contact{
-  height: 75vh;
-
-}
-
-/* .triangle-one{
-  /* height: 37.5vh;
-  border-left: 1000px solid rgba(0, 0, 0, 0);
-    border-right: 1000px solid rgba(0, 0, 0, 0);
-    border-top: 550px solid #EEEEEE;
-    left: 50%;
-    margin-left: -1000px;
-    position: absolute;
-    width: 0; */
-    /* position:relative;
-     width: 0;
-     height: 0;
-     border-top: 1000px solid red;
-     border-right: 1500px solid transparent;
-} */
-
-/* .triangle-two{
-  border-left: 1000px solid rgba(0, 0, 0, 0);
-    border-right: 1000px solid rgba(0, 0, 0, 0);
-    border-bottom: 600px solid #EEEEEE;
-    height: 0;
-    left: 50%;
-    margin-left: -1000px;
-    position: absolute;
-    width: 0;
-  height: 37.5vh;
-} */
 /** Footer **/
 
 .footer {
-  /* background-color:  #E9BDB7; */
+  background-color:  #EEEEEE;
+  border-top: 1px solid #7700A3;
   text-align: center;
   height: 50px;
   text-shadow: 1px 1px black;
