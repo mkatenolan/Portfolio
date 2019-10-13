@@ -54,7 +54,7 @@ padding-top: 0.8em;
 }
 
 a{
-  color: black;
+  color: white;
 }
 
 
@@ -72,7 +72,7 @@ a{
   margin-left: 0;
   margin-right: auto;
   border:none;
-  font-size: 1.6em;
+  font-size: 1.2em;
   cursor:pointer;
 }
 
@@ -194,8 +194,6 @@ h2 {
   font-family: 'Caveat', cursive;
   padding-top: 0.8em;
   padding-right: 1.8em;
-  text-shadow: 1px 1px black;
-  text-align: center;
   margin-left: 1.8em;
   font-size: 4em;
   margin-top: 0;
@@ -239,9 +237,13 @@ h3{
 
 .Projects{
   background-color: var(--main-purple-color);
-  text-align: center;
-  padding-top: 13vh;
+  padding-top: 8vh;
   padding-bottom: 3rem;
+  color: white;
+}
+
+.projects-text {
+  text-align: center;
 }
 
 .Projects img {
@@ -316,6 +318,7 @@ background-color: rgba(0, 0, 0, 0.8)
 /** Tech-stack section **/
 
 .Tech-stack{
+  padding-top: 8vh;
   background-color: var(--off-white-color);
   height: 80vh;
 
@@ -342,16 +345,29 @@ background-color: rgba(0, 0, 0, 0.8)
   justify-content: space-evenly;
 }
 
+/** Contact me section **/
+
+.Contact{
+  padding-top: 8vh;
+  height: 84vh;
+  background-image:url(images/postbox-background.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+
 
 
 /** Footer **/
 
 .footer {
-  background-color:  #EEEEEE;
-  border-top: 1px solid #7700A3;
-  text-align: center;
-  height: 50px;
-  text-shadow: 1px 1px black;
-  padding-top: 1.5em;
+  background-color: var(--off-white-color);
+  text-transform: uppercase;
+  font-size: 0.6em;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
