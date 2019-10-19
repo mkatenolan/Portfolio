@@ -139,14 +139,6 @@ li {
   text-shadow: 0.5px 0.5px black;
 }
 
-/* .home-icons-container {
-  position: fixed;
-  width: 25%;
-  display: flex;
-  justify-content: flex-end;
-  align-self: flex-end;
-} */
-
 /** About section **/
 
 .About {
@@ -281,6 +273,7 @@ h3 {
 .Project-tablet-phone-text{
   display: none;
 }
+
 /** Tech-stack section **/
 
 .Tech-stack {
