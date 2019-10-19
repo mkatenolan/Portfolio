@@ -277,6 +277,9 @@ h3 {
   transform: translate(-50%, -50%);
 }
 
+.Project-tablet-phone-text{
+  display: none;
+}
 /** Tech-stack section **/
 
 .Tech-stack {
@@ -375,6 +378,15 @@ h3 {
   .contact-links-container {
     left: 16%;
   }
+  .overlay-one{
+    display: none;
+  }
 
+  .Project{
+    width: 35%;
+  }
+
+  .Project-tablet-phone-text{
+    display: block;
   }
 }
