@@ -5,6 +5,7 @@
 
 html {
   scroll-behavior: smooth;
+
 }
 /** Navigation section **/
 
@@ -134,17 +135,17 @@ li {
   grid-row: 4 / span 2;
   grid-column: 4 / span 4;
   color: black;
-  font-size: 1.05em;
+  font-size: 1.5vw;
   text-shadow: 0.5px 0.5px black;
 }
 
-.home-icons-container {
+/* .home-icons-container {
   position: fixed;
   width: 25%;
   display: flex;
   justify-content: flex-end;
   align-self: flex-end;
-}
+} */
 
 /** About section **/
 
@@ -389,4 +390,38 @@ h3 {
   .Project-tablet-phone-text{
     display: block;
   }
+}
+
+@media only screen and (max-width:400px) {
+  .Home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  .home-header {
+    font-family: "Caveat", cursive;
+    font-size: 3em;
+  }
+
+  .Home-image {
+    -webkit-filter: grayscale(0.3);
+    filter: grayscale(0.3);
+    max-width: 40vw;
+    height: auto;
+    margin-bottom: 1em;
+    z-index: -1;
+  }
+
+  .Home-text-div {
+    grid-row: 4 / span 2;
+    grid-column: 4 / span 4;
+    color: black;
+    font-size: 0.5em;
+    padding: 3em;
+    text-align: center;
+    text-shadow: 0.5px 0.5px black;
+  }
+
 }
