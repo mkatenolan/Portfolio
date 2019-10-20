@@ -5,7 +5,6 @@
 
 html {
   scroll-behavior: smooth;
-
 }
 /** Navigation section **/
 
@@ -238,7 +237,6 @@ h3 {
   cursor: pointer;
 }
 
-
 .Projects-container {
   display: flex;
   justify-content: center;
@@ -270,7 +268,7 @@ h3 {
   transform: translate(-50%, -50%);
 }
 
-.Project-tablet-phone-text{
+.Project-tablet-phone-text {
   display: none;
 }
 
@@ -298,7 +296,6 @@ h3 {
   align-items: center;
 }
 
-
 .tech-stack {
   width: 5vw;
   height: auto;
@@ -320,7 +317,6 @@ h3 {
   transform: translateY(-3px);
 }
 
-
 /** Contact me section **/
 
 .Contact {
@@ -340,12 +336,12 @@ h3 {
   font-size: 1.4em;
   text-decoration: underline;
   text-transform: uppercase;
+  text-align: left;
   width: 30%;
   height: 40vh;
   background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
   left: 7%;
-  text-align: center;
 }
 
 .contact-link {
@@ -366,38 +362,35 @@ h3 {
 
 /** Media query tablet **/
 
-
-@media only screen and (max-width:1024px) {
-
+@media (min-width: 401px) and (max-width: 1024px) {
   .contact-links-container {
     left: 16%;
   }
-  .overlay-one{
+  .overlay-one {
     display: none;
   }
 
-  .Project{
+  .Project {
     width: 35%;
   }
 
-  .Project-tablet-phone-text{
+  .Project-tablet-phone-text {
     display: block;
   }
 }
 
-@media only screen and (max-width:400px) {
-  h2{
+@media only screen and (max-width: 400px) {
+  h2 {
     font-size: 2em;
     margin-left: 1em;
   }
 
-/** Home section **/
+  /** Home section **/
 
   .Home {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
   }
 
   .home-header {
@@ -410,7 +403,7 @@ h3 {
     filter: grayscale(0.3);
     max-width: 40vw;
     height: auto;
-    margin:3em 0 0 0;
+    margin: 3em 0 0 0;
     z-index: -1;
   }
 
@@ -425,10 +418,56 @@ h3 {
 
   /** Project section **/
 
-  .Projects-container{
+  .Projects-container {
     flex-direction: column;
   }
+
+  .Project-tablet-phone-text {
+    display: block;
+  }
+
   .Project {
-    width: 100vw;
+    width: 80%;
+  }
+
+  .express-img,
+  .git-img,
+  .node-img,
+  .html-img {
+    width: 50em;
+    height: auto;
+  }
+
+  .react-img {
+    width: 35vw;
+    height: auto;
+  }
+
+  .tech-stack {
+    width: 10vw;
+    height: auto;
+  }
+
+  .tech-stack-container {
+    border: solid var(--main-purple-color) 1px;
+    background-color: var(--main-purple-color);
+    border-radius: 0.5em;
+    padding: 1em;
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .contact-links-container {
+    width: 90%;
+  }
+
+  .footer {
+    font-size: 0.5em;
   }
 }
