@@ -427,7 +427,7 @@ h3 {
   }
 
   .Project {
-    width: 80%;
+    max-width: 100%;
   }
 
   .express-img,
